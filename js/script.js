@@ -15,7 +15,7 @@ loginBtn.addEventListener("click", (e) => {
         userEmail.value = ''
         userPassword.value = ''
         setTimeout(()=> {
-            window.location.assign('../HomePage.html')
+            window.location.assign('./JS-Shopping-Cart//HomePage.html')
         } , 1000 )
     }
     else {
