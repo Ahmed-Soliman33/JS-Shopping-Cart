@@ -1,0 +1,265 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+/* ================ start Header ===================*/
+header.container-fluid {
+    height: 60px;
+    background-color: #808080f8;
+    position: fixed;
+    top: 0;
+}
+
+.header-content .logo {
+    font-size: 22px;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+.header-links {
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 12px;
+    margin-right: 100px;
+    gap: 60px;
+}
+.header-content ul li a  {
+    color: #ffffff;
+    font-size: 19px;
+    transition: .5s
+}
+.header-content ul li a:hover ,
+#LogOutBtn1:hover {
+    color: #fbfbfba9;
+}
+
+#LogOutBtn1 {
+    color: #ffffff;
+    cursor: pointer;
+    transition: .5s
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart-icon i {
+    color: #f7f5f5;
+    font-size: 24px;
+}
+
+.cart-icon .cart-counter {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+/* ================ end Header ===================*/
+
+/* ================ start form ===================*/
+form.login-form {
+    width: 50%;
+    height: auto;
+    border: 1px solid #36363635;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+}
+
+form.login-form input {
+    all: unset;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #b5b5b5b5;
+    padding: 5px;
+}
+
+form.login-form div {
+    all: unset;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    background-color: #939292;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+    padding: 5px 0px;
+}
+
+form.login-form div:hover {
+    background-color: #939292b7;
+}
+
+@media (max-width : 800px) {
+    nav.container {
+        padding-top: 10px;
+    }
+
+    .cart-icon {
+        padding-top: 8px;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .login-btn {
+        display: block !important;
+        margin: auto;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .login-btn button {
+        all: unset;
+        background-color: #222;
+        color: #fff;
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        font-size: 17px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    form.login-form {
+        width: 70%;
+        height: auto;
+        padding: 30px 25px 30px 18px;
+    }
+    form.login-form input {
+        width: 100%;
+    }
+}
+
+/* ================ end form ===================*/
+/* ================ start products ===================*/
+h1.welcome-user {
+    margin-top: 70px;
+}
+
+.products-container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.products-container .item {
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #424141;
+}
+
+.products-container .item img {
+    width: 200px;
+    max-height: 230px ;
+}
+
+.products-container .item .item-title {
+    font-size: 24px;
+}
+
+.products-container .item .item-info {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.products-container .item .item-price {
+    color: #e20404;
+    margin: -15px auto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.products-container .item button {
+    all: unset;
+    margin-top: 25px;
+    background-color: #575757;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 4px 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.products-container .item button:hover {
+    background-color: #363636c0;
+}
+@media (max-width : 500px) {
+    .products-container {
+        gap: 7px;
+    }
+    .products-container .item {
+        width: 160px;
+        padding: 3px;
+        font-size: 14px;
+    }
+    .products-container .item img{
+        width: 153px;
+    }
+    .products-container .item .item-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .products-container .item .item-info {
+        font-size: 13px;
+    }
+    .products-container .item .item-price {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .products-container .item div {
+        text-align: center;
+    }
+    .products-container .item button {
+        width: 70px;
+        font-size: 12px;
+    }
+    form.login-form {
+        width: 80%;
+        height: auto;
+    }
+    form.login-form input , form.login-form div  {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    form.login-form div {
+        padding-top: 12px;
+        padding-bottom: 5px;
+    }
+}
+/* ================ end products ===================*/
