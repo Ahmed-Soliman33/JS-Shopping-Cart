@@ -37,13 +37,13 @@ welcomeUser.innerHTML = `Welcome ${userName} `
 LogOutBtn1.addEventListener('click', () => {
     localStorage.clear();
     setTimeout(() => {
-        window.location.assign('https://ahmed-soliman33.github.io/index.html')
+        window.location.assign('https://ahmed-soliman33.github.io/JS-Shopping-Cart/index.html')
     }, 1000)
 })
 LogOutBtn2.addEventListener('click', () => {
     localStorage.clear();
     setTimeout(() => {
-        window.location.assign('https://ahmed-soliman33.github.io/index.html')
+        window.location.assign('https://ahmed-soliman33.github.io/JS-Shopping-Cart/index.html')
     }, 1000)
 })
 
