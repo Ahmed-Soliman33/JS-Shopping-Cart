@@ -15,7 +15,7 @@ loginBtn.addEventListener("click", (e) => {
         userEmail.value = ''
         userPassword.value = ''
         setTimeout(()=> {
-            window.location.assign('../index.html')
+            window.location.assign('https://ahmed-soliman33.github.io/JS-Shopping-Cart/HomePage.html')
         } , 1000 )
     }
     else {
