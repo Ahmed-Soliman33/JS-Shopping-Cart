@@ -15,7 +15,7 @@ loginBtn.addEventListener("click", (e) => {
         userEmail.value = ''
         userPassword.value = ''
         setTimeout(()=> {
-            window.location.assign('/')
+            window.location.assign('../index.html')
         } , 1000 )
     }
     else {
