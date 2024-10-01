@@ -31,15 +31,9 @@ counterHandel()
 // Handle logOut Button
 LogOutBtn1.addEventListener('click', () => {
     localStorage.clear();
-    setTimeout(() => {
-        window.location.assign('/index.html')
-    }, 1000)
 })
 LogOutBtn2.addEventListener('click', () => {
     localStorage.clear();
-    setTimeout(() => {
-        window.location.assign('/index.html')
-    }, 1000)
 })
 ////////////////////////////////////////////////////
 

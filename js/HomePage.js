@@ -36,15 +36,9 @@ welcomeUser.innerHTML = `Welcome ${userName} `
 
 LogOutBtn1.addEventListener('click', () => {
     localStorage.clear();
-    setTimeout(() => {
-        window.location.assign('/index.html')
-    }, 1000)
 })
 LogOutBtn2.addEventListener('click', () => {
     localStorage.clear();
-    setTimeout(() => {
-        window.location.assign('/index.html')
-    }, 1000)
 })
 
 // Draw Cart Items
